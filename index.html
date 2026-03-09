@@ -8,7 +8,13 @@
   <style>
     * {
       box-sizing: border-box;
-      margin: 5px;
+    }
+
+    header,
+    footer,
+    section,
+    aside,
+    main {
       padding: 1em;
     }
 
@@ -16,11 +22,13 @@
     footer {
       color: white;
       background-color: #1976d2;
+      flex-grow: 1;
     }
 
     aside {
       color: #212121;
       background-color: #bbdefb;
+      flex-grow: 3;
     }
     section {
       background-color: #ff4081;
@@ -30,22 +38,43 @@
     main {
       background-color: #2196f3;
       color: white;
+      flex-grow: 7;
     }
 
     body {
       display: flex;
       flex-direction: column;
       background-color: #ffffff;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    div.row {
+      flex-grow: 8;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
     }
   </style>
   <body>
     <header>Header</header>
-    <aside>
-      Aside
-      <section>Section 1</section>
-      <section>Section 2</section>
-    </aside>
-    <main>Main</main>
+    <div class="row">
+      <aside class="col">
+        Aside
+        <section>Section 1</section>
+        <section>Section 2</section>
+      </aside>
+      <main>Main</main>
+    </div>
+
     <footer>Footer</footer>
   </body>
 </html>

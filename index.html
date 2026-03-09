@@ -67,12 +67,17 @@
       display: flex;
       flex-direction: column;
     }
+
+    @media screen and (max-width: 600px) {
+      div.row {
+        flex-direction: column;
+      }
+    }
   </style>
   <body>
     <header>Header</header>
     <div class="row">
       <aside class="col">
-        Aside
         <section>Section 1</section>
         <section>Section 2</section>
       </aside>

@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <style>
-      h1::first-letter {
-        color: blue;
-      }
-    </style>
   </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 5px;
+      padding: 1em;
+    }
+
+    header,
+    footer {
+      color: white;
+      background-color: #1976d2;
+    }
+
+    aside {
+      color: #212121;
+      background-color: #bbdefb;
+    }
+    section {
+      background-color: #ff4081;
+      color: white;
+    }
+
+    main {
+      background-color: #2196f3;
+      color: white;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+    }
+  </style>
   <body>
-    <h1>Welcome</h1>
+    <header>Header</header>
+    <aside>
+      Aside
+      <section>Section 1</section>
+      <section>Section 2</section>
+    </aside>
+    <main>Main</main>
+    <footer>Footer</footer>
   </body>
 </html>
